@@ -1,0 +1,45 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Base application theme. -->
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--slider-->
+        <item name="android:windowIsTranslucent">true</item> <!--切换activity时屏幕不变暗 (注意：此属性会导致style中的android:windowAnimationStyle引用的Activity动画失效)-->
+        <item name="android:windowBackground">@android:color/transparent</item> <!--窗口的背景设置成透明 ,这样的话在我们每个界面的根布局都要设置background,要不然就是透明的-->
+    </style>
+
+    <!--<style name="TextStyle">-->
+        <!--<item name="android:textSize">@dimen/font_24</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+    <!--</style>-->
+
+    <!--<style name="WideBtnStyle">-->
+        <!--<item name="android:textSize">@dimen/font_24</item>-->
+        <!--<item name="android:textColor">@color/black</item>-->
+        <!--<item name="android:textAllCaps">false</item>-->
+    <!--</style>-->
+
+    <!--<style name="AnimationActivity" parent="@android:style/Animation.Activity">-->
+        <!--<item name="android:activityOpenEnterAnimation">@aslide_left_inleft</item>-->
+        <!--<item name="android:activityOpenExitAnimation">@aslide_left_outleft</item>-->
+        <!--<item name="android:activityCloseEnterAnimation">@aslide_right_inight</item>-->
+        <!--<item name="android:activityCloseExitAnimation">@aslide_right_outight</item>-->
+    <!--</style>-->
+
+    <!-- 等待提示框 -->
+    <style name="LoadingDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item><!-- 边框 -->
+        <item name="android:windowIsFloating">true</item><!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item><!-- 半透明 -->
+        <item name="android:backgroundDimEnabled">true</item> <!-- 模糊 -->
+        <item name="android:windowNoTitle">true</item><!-- 无标题 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+
+        <!--<item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>--> <!-- 是否显示动画 -->
+    </style>
+
+    <style name="progressBarStyle" parent="Widget.AppCompat.ProgressBar">
+        <item name="android:indeterminateDrawable">@drawable/progress_bar</item>
+    </style>
+
+    <style name="progressBarHorizontalStyle" parent="Base.Widget.AppCompat.ProgressBar.Horizontal" />
+</resources>

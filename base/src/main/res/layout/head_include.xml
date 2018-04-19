@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="fill_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#fafafa"
+    android:padding="0dp"
+    app:contentInsetStart="0dp"
+    app:contentInsetRight="0dp"
+    android:elevation="2dp"
+
+    app:layout_collapseMode="pin"
+    app:layout_scrollFlags="scroll|enterAlways|snap"
+    >
+
+    <ImageView
+        android:id="@+id/iv_head_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:onClick="onClick"
+        android:src="@drawable/head_back_normal"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:background="@drawable/btn_press_sel"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_head_backdes"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="返回描述"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp"
+        android:background="@drawable/btn_press_sel"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/tv_head_left"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="返回"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:textSize="16.0sp"
+        android:background="@drawable/btn_press_sel"
+        android:visibility="gone"
+        />
+
+    <TextView
+        android:id="@+id/tv_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="标题"
+        android:textColor="@color/gray_text_dark"
+        android:textSize="20.0sp" />
+
+
+    <ImageView
+        android:id="@+id/iv_head_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+
+    <ImageView
+        android:id="@+id/iv_head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:clickable="true"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:background="@drawable/btn_press_sel"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_head_right"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right|center_vertical"
+        android:paddingLeft="@dimen/dp_20"
+        android:paddingRight="@dimen/dp_20"
+        android:text="确定"
+        android:gravity="center"
+        android:textColor="@color/red"
+        android:textSize="16.0sp"
+        android:background="@drawable/btn_press_sel"
+        android:visibility="gone" />
+
+</android.support.v7.widget.Toolbar>

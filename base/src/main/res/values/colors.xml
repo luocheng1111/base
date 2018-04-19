@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- basic colors -->
+    <color name="white">@android:color/white</color>
+    <color name="black">@android:color/black</color>
+    <color name="trans">@android:color/transparent</color>
+    <color name="gray">#939393</color>
+    <color name="green">#27D34D</color>
+    <color name="blue">#2A91BD</color>
+    <color name="orange">#FF9D2F</color>
+    <color name="red">#FB5553</color>
+
+
+    <!-- grayscale -->
+    <color name="gray_bg" >#f0f0f0</color> <!--  一般用于当背景色 -->
+    <color name="gray_line">#e5e5e5</color> <!-- 一般用于线的颜色 -->
+    <color name="gray_text_light">#999999</color> <!-- 一般用于文字 浅灰色 -->
+    <color name="gray_text_dark" >#5F5F5F</color> <!-- 一般用于文字 深灰色 -->
+    <color name="black_50">#7f000000</color>      <!-- 一般用于提示文字 黑色半透明 -->
+    <color name="white_50" >#7fffffff</color>
+    <color name="trans_50">#1f000000</color>
+    <color name="gray_10">#2f939393</color>
+
+    <color name="red_light" >#FFEEF0</color>
+    <color name="red_half">#CCFB5553</color>
+
+</resources>

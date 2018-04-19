@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view"
+    style="@style/MatchWrap.Vertical"
+    android:layout_marginTop="10dp"
+    >
+
+    <TextView
+        android:id="@+id/tv_columntitle"
+        style="@style/MatchWrap"
+        android:paddingLeft="16dp"
+        android:paddingTop="6dp"
+        android:paddingBottom="@dimen/dp_10"
+        android:text="栏目名称"
+        android:textColor="@color/gray_text_light"
+        android:textSize="14sp"
+        />
+
+    <ImageView
+        android:id="@+id/iv_topline"
+        style="@style/MatchOne"
+        android:background="@color/gray_text_light" />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_columnlayout"
+        style="@style/MatchWrap"
+        android:paddingBottom="15dp"
+        android:paddingLeft="25dp"
+        android:paddingRight="15dp"
+        android:paddingTop="15dp"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_leftic"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+             />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/iv_leftic"
+            android:textColor="@android:color/black"
+            android:gravity="center_vertical"
+            android:text="支付方式"
+            android:textSize="14.0sp" />
+
+        <TextView
+            android:id="@+id/tv_leftdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="14.0dip"
+            android:layout_toRightOf="@+id/tv_title"
+            android:gravity="center_vertical"
+            android:paddingTop="1dp"
+            android:text="支付方式"
+            android:textSize="12.0sp" />
+
+        <ImageView
+            android:id="@+id/iv_rightarrow"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/right_arrow" />
+
+        <TextView
+            android:id="@+id/tv_rightdes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:layout_toLeftOf="@+id/iv_rightarrow"
+            android:text="0.00元"
+            android:textSize="12.0sp" />
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
